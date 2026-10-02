@@ -29,18 +29,19 @@ export default function HeroSection() {
             <div className="space-y-6">
               <div className="inline-flex items-center px-3 py-1 rounded-full border bg-background/50 backdrop-blur-sm text-sm">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 font-medium">
-                  Full stack developer
+                  Software Developer · Embedded Systems &amp; Cybersecurity
                 </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
                 Hi, I&apos;m{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
-                NISHIMWE NDINDABAHIZI Hope
+                  Hope Nishimwe
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
-                I am a passionate software developer with growing interest in embedded systems, 
-                cyber security and  smart solutions for real-world problems
+                Software programming graduate of Rwanda Coding Academy building hardware/software
+                projects that solve real problems from a transformer-theft monitoring system
+                to published React/TypeScript tooling and many more. 
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button asChild size="lg" className="group">

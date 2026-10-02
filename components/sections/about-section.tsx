@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Code, Laptop, Lightbulb, Users } from "lucide-react";
+import { Cpu, ShieldCheck, Code2, Users } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -14,28 +14,28 @@ import SectionHeading from "@/components/ui/section-heading";
 
 const services = [
   {
-    icon: <Code className="h-10 w-10 text-blue-500" />,
-    title: "Web Development",
+    icon: <Cpu className="h-10 w-10 text-blue-500" />,
+    title: "Embedded Systems",
     description:
-      "Building responsive, accessible websites and web applications with modern technologies.",
+      "Building hardware/software systems — sensor-driven monitoring, facial recognition access control, and IoT devices communicating over MQTT.",
   },
   {
-    icon: <Laptop className="h-10 w-10 text-green-500" />,
-    title: "Full stack  Development",
+    icon: <Code2 className="h-10 w-10 text-green-500" />,
+    title: "Software Development",
     description:
-      "I design and implement full-stack solutions using modern frameworks (e.g., React/Next.js on the frontend, Node.js/Express/NestJS on the backend) and databases (PostgreSQL, MongoDB).",
+      "Building applications across Java, Python, JavaScript/TypeScript, and React — from desktop GUIs to real-time web apps with Socket.io.",
   },
   {
-    icon: <Lightbulb className="h-10 w-10 text-amber-500" />,
-    title: "UX/UI Design",
+    icon: <ShieldCheck className="h-10 w-10 text-amber-500" />,
+    title: "Cybersecurity Fundamentals",
     description:
-      "Designing user-centered experiences that balance aesthetics and functionality.",
+      "Trained in security fundamentals through advanced topics — Python for security, network reconnaissance, and penetration testing.",
   },
   {
     icon: <Users className="h-10 w-10 text-purple-500" />,
-    title: "Team Collaboration",
+    title: "Mentorship & Leadership",
     description:
-      "Working effectively in agile teams to deliver high-quality software solutions.",
+      "President of the Reading Club and volunteer tutor for ~80 incoming students weekly, alongside interpreting for the deaf community.",
   },
 ];
 
@@ -85,19 +85,19 @@ export default function AboutSection() {
             <h3 className="text-2xl font-bold mb-4">Who I Am</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Hello! I'm NISHIMWE NDINDABAHIZI Hope, a passionate software development student with
-                a growing interest in embedded systems,cybersecurity and  smart solutions for real-world
-                problems. I enjoy learning new technologies, collaborating on innovative projects, and using ICT
-                to create meaningful change in community 
+                I'm Hope Nishimwe Ndindabahizi, a software programming graduate of Rwanda Coding
+                Academy (2023–2026) with hands-on experience across Java, Python, JavaScript/TypeScript,
+                React, and embedded systems. I build hardware/software projects that solve real-world
+                problems including a hackathon-stage transformer-theft monitoring system and a published React/TypeScript component library.
               </p>
               <p>
-                I'm constantly learning and improving my skills to stay at the forefront of the ever-evolving tech landscape.
+                I've built on that with progressive cybersecurity training (network reconnaissance, penetration
+                testing) through Cyberium, and I combine that full-stack and embedded build experience
+                with active peer mentorship and community leadership.
               </p>
               <p>
-                When I&apos;m not coding, you can find me exploring new
-                technologies, reading books,contributing to open-source projects, or mentoring
-                aspiring developers. I believe in writing clean, maintainable
-                code and creating intuitive user experiences.
+                When I&apos;m not coding, I volunteer-tutor around 80 newly admitted students every Saturday evenings, and interpret
+                church services in Rwandan Sign Language for the deaf community.
               </p>
             </div>
           </motion.div>

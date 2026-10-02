@@ -9,52 +9,46 @@ import SectionHeading from "@/components/ui/section-heading";
 // Skill categories and items
 const skillCategories = [
   {
-    id: "frontend",
-    label: "Frontend",
+    id: "languages",
+    label: "Languages & Frameworks",
     skills: [
-      { name: "HTML & CSS", level: 95 },
-      { name: "JavaScript/TypeScript", level: 90 },
-      { name: "React.js", level: 85 },
-      { name: "Next.js", level: 80 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "UX/UI Design", level: 80 },
-      { name: "Figma", level: 90 },
-      { name: "Framer Motion", level: 70 },
-      { name: "React Native", level: 96 },
-
+      { name: "Java", level: 85 },
+      { name: "Python", level: 80 },
+      { name: "JavaScript", level: 85 },
+      { name: "TypeScript", level: 80 },
+      { name: "React", level: 75 },
+      { name: "Socket.io", level: 65 },
+      { name: "OOP", level: 85 },
     ],
   },
   {
-    id: "backend",
-    label: "Backend",
+    id: "systems",
+    label: "Embedded & Security",
     skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Express.js", level: 80 },
-      { name: "MongoDB", level: 75 },
-      { name: "RESTful APIs", level: 85 },
-      { name: "Firebase", level: 75 },
-      { name: "Java", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "Postgres", level: 95 },
-      { name: "Data structure and algorithm using c++", level: 98 }
+      { name: "Embedded Systems", level: 75 },
+      { name: "Cybersecurity Fundamentals", level: 65 },
+      { name: "Network Reconnaissance", level: 60 },
+      { name: "Penetration Testing", level: 55 },
+      { name: "GUI Development", level: 75 },
+      { name: "ArcFace / ONNX (Facial Recognition)", level: 60 },
+      { name: "MQTT", level: 60 },
     ],
   },
   {
     id: "tools",
-    label: "Tools & Others",
+    label: "Tools & Practices",
     skills: [
-      { name: "Git & GitHub", level: 90 },
-      { name: "Testing (Jest/RTL)", level: 75 },
-      { name: "Vercel", level: 80 },
-      { name: "VS Code", level: 95 },
-      { name: "Postman", level: 85 },
-      { name: "blender", level: 75 }
+      { name: "Git & GitHub", level: 80 },
+      { name: "Tesseract OCR", level: 65 },
+      { name: "Postman", level: 70 },
+      { name: "Teamwork & Mentorship", level: 90 },
+      { name: "Communication", level: 90 },
     ],
   },
 ];
 
 export default function SkillsSection() {
-  const [activeTab, setActiveTab] = useState("frontend");
+  const [activeTab, setActiveTab] = useState("languages");
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -71,7 +65,7 @@ export default function SkillsSection() {
 
         <div className="mt-12 max-w-3xl mx-auto">
           <Tabs
-            defaultValue="frontend"
+            defaultValue="languages"
             value={activeTab}
             onValueChange={setActiveTab}
             className="w-full"
@@ -135,7 +129,7 @@ export default function SkillsSection() {
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-          {["React", "TypeScript", "Node.js", "MongoDB", "Next.js", "Tailwind", "Firebase", "Figma"].map(
+          {["Java", "Python", "JavaScript", "TypeScript", "React", "Socket.io", "Embedded Systems", "Cybersecurity"].map(
             (tech, index) => (
               <motion.div
                 key={tech}
